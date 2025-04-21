@@ -1,0 +1,54 @@
+/* 
+
+CSS Grid
+
+Es un sistema bidmencional que nospermite crear layouts a travez de filas y columnas.
+
+Fcilita la creación de diseños complejos y responsivos.
+
+Conceptos Básicos
+
+container -> Elementos hijos que se encuentran dentro del padre y se verán afectados por la grilla. 
+
+GRID o Columnas
+
+Para usar grid y sus propiedades debemos asignar al container el valor ´grid´ en su propiedad display 
+
+  display: grid;
+
+Para definir el número y tamaño de las columnas del grid usamos la propiedad: 
+
+  grid-template-columns
+
+Definimos el tamaño de cada columna separandos por un espacio. Podemos definiar tantras columnas como necesitemos. 
+
+ROWS o FILAS
+
+Para definir el número y tamaño de las filas del grid usamos la propiedad::after
+
+  grid-template-rows
+
+Definir el tamaño de cada fila separando con un espacio. Podemos definir tantas filas como necesitamos. 
+
+  grid-template-rows: 100px 200px 100px 200px
+*/
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 200px;
+  grid-template-rows: 100px 200px 100px 200px;
+
+  background-color: #1b475d;
+  border: 2px solid #d3dc7c;
+}
+
+.item {
+  background-color: #8ebd9d;
+  border: 2px solid #fad564;
+}
