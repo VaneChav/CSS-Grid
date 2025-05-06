@@ -1,0 +1,42 @@
+/* 
+
+Grid Auto Flow
+
+Controla como se acomodan los elementos de forma automatica en la grilla, cuando no especificamos su posición de los items.
+
+grid-auto-flow; -> Usa las filas /default)
+
+
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #305165;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  padding: 12px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-auto-flow: row; /* Default */
+  grid-auto-flow: column;
+
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  background-color: #305165;
+}
+
+.item {
+  text-align: center;
+  background-color: #aac9ba;
+}

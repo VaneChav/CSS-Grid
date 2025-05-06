@@ -19,6 +19,15 @@ grip-template-areas::after
     grid-area: header;
 
   Ojo: Las áreas se escriben sin comillas.
+
+  Para agregar espacio entre las filas y columnas usamos la propiedad gap.
+
+    gap: 24px;
+
+  Si queremos usar espacio distinto para filas y columnas usamos: colum-gap y row-gap.
+
+    colum-gap: 16px
+    row-gap: 16px;
 */
 
 * {
