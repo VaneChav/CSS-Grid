@@ -17,7 +17,7 @@ grid-auto-flow; -> Usa las filas /default)
 }
 
 body {
-  background-color: #305165;
+  font-family: sans-serif;
 }
 
 .container {
@@ -29,6 +29,9 @@ body {
   display: grid;
   grid-auto-flow: row; /* Default */
   grid-auto-flow: column;
+
+  direction: ltr;/* Left To Right-Default*/
+  direction: rtl;/* Right To Left */
 
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);

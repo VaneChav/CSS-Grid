@@ -1,0 +1,22 @@
+/* 
+
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  background-color: #305165;
+}
+
+.item {
+  background-color: #aac9ba;
+}
